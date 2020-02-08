@@ -249,22 +249,8 @@ background-color:green;
     left:580px;
     text-align: center;
 }
-#address{
-    top:2010px;
-    overflow:hidden;
-    position: absolute;
-    width:20px;
-    left:550px;
-    text-align: center;
-}
-#addressimage{
-  top:2010px;
-  overflow:hidden;
-  position:absolute;
-  width:20px;
-  left:600px;
-  text-align: center;
-}
+
+
 #network{
     top:2098px;
     overflow:hidden;
