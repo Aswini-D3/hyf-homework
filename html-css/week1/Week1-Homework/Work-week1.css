@@ -1,0 +1,265 @@
+.home{
+    position:absolute;
+    top:30px;
+    left:50px;
+    color:white;
+    border-bottom:5px solid grey;
+    font-size:20px;
+  }
+  #ash{
+    color: red;
+  }
+.about{
+  position:absolute;
+  top:30px;
+  left:350px;
+  color:white;
+  border-bottom:5px solid grey;
+  font-size:20px;
+  
+  
+}
+.skills{
+  position:absolute;
+  top:30px;
+  left:700px;
+  color:white;
+  border-bottom:5px solid grey;
+  font-size:20px;
+}
+
+.portfolio{
+  position:absolute;
+  top:30px;
+  left:1000px;
+  color:white;
+  border-bottom:5px solid grey;
+  font-size:20px;
+}
+
+.contact{
+  position:absolute;
+  top:30px;
+  left:1300px;
+  color:white;
+  border-bottom:5px solid grey;
+  font-size:20px;
+}
+
+a:hover{
+background-color:green;
+}
+  a:active{
+    color:orange;
+  }
+
+  
+}#image1{
+  position:absolute;
+}
+
+#ash{
+  left:665px;
+  position:absolute;
+  top:150px;
+  font-size:26px;
+  color:white;
+  text-decoration:underline;
+  
+}
+#readmore{
+  position:absolute;
+  left:650px;
+  top:650px;
+  color:white;
+  text-decoration:underline;
+  
+}
+#AboutMe{
+  position:absolute;
+  left:150px;
+  font-size:23px;
+  text-align:center;
+  border-bottom:5px solid grey;
+  height:30px;
+  top:720px;
+  padding:5px;
+  width:1100px;
+  background-color:orange;
+  color:white;
+}
+#aboutimage{
+  position:absolute;
+  top:800px;
+  width:350px;
+  height:350px;
+  left:145px;
+  padding:5px;
+}
+.description{
+  position:absolute;
+  border:10px solid orange;
+  top:805px;
+  left:550px;
+  height:330px;
+  width:690px;
+  font:italic 16px cursive;
+  background-color:red;
+  }
+#skills1{
+  top:1140px;
+  position:absolute;
+  left:150px;
+  border-bottom:5px solid grey;
+  color:white;
+  background-color:orange;
+  width:1100px;
+  height:30px;
+  text-align:center;
+  font-size:23px;
+  padding:5px;
+  
+  
+}
+#html{
+  position:absolute;
+  top:1250px;
+  width:200px;
+  left:140px;
+}
+#css{
+  position:absolute;
+  top:1240px;
+  width:160px;
+  left:450px;
+}
+#testing{
+  position:absolute;
+  top:1270px;
+  width:200px;
+  left:750px;
+}
+#sql{
+  position:absolute;
+  top:1250px;
+  left:960px;
+  width:400px;
+}
+#portfolio1{
+  top:1380px;
+  position:absolute;
+  font-size:23px;
+  border-bottom:5px solid grey;
+  left:150px;
+  width:1100px;
+  text-align:center;
+  color:white;
+  background-color:orange;
+  padding:5px;
+  
+}
+#learning{
+  top:1520px;
+  position:absolute;
+  font-size:23px;
+  border-bottom:5px solid grey;
+  left:150px;
+  width:1100px;
+  text-align:center;
+  color:white;
+  background-color:orange;
+  padding:5px;
+  
+}
+#hack{
+  top:1700px;
+  position:absolute;
+  font-size:23px;
+  border-bottom:5px solid grey;
+  left:150px;
+  width:1100px;
+  text-align:center;
+  color:white;
+  background-color:orange;
+  padding:5px;
+  
+}
+#project1{
+  top:1500px;
+  position:absolute;
+  left:150px;
+  color:blue;
+  
+}
+#project2{
+  top:1600px;
+  position:absolute;
+  left:150px;
+  
+}
+#project3{
+  top:1800px;
+  position:absolute;
+  left:150px;
+}
+#project4{
+  top:1850px;
+  position:absolute;
+  left:700px;
+}
+#contact1{
+  top:1850px;
+  position:absolute;
+  border-bottom:5px solid grey;
+  width:1100px;
+  text-align:center;
+  left:150px;
+  color:white;
+  padding:5px;
+  background-color:orange;
+  font-size:23px;
+  
+}
+#phone1{
+    top:1950px;
+    position:absolute;
+    width:20px;
+    text-align: center;
+    left:550px;
+}
+#myphone{
+    top:1940px;
+    position: absolute;
+    width:10px;
+    left:600px;
+    text-align: center;
+}
+#mail1{
+    top:1980px;
+    position: absolute;
+    width:20px;
+    left:550px;
+    text-align:center ;
+
+}
+#mymail1{
+    top:1965px;
+    position:absolute;
+    width:10px;
+    left:580px;
+    text-align: center;
+}
+
+
+#network{
+    top:2098px;
+    overflow:hidden;
+    position:absolute;
+    left:620px;
+    text-align:center;
+    width:70px;
+
+}
+
+            
+  
