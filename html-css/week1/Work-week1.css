@@ -223,53 +223,53 @@ background-color:green;
 #phone1{
     top:1950px;
     position:absolute;
-    width:50px;
+    width:20px;
     text-align: center;
     left:550px;
 }
 #myphone{
-    top:1950px;
+    top:1940px;
     position: absolute;
-    width:100px;
-    left:650px;
+    width:10px;
+    left:600px;
     text-align: center;
 }
 #mail1{
     top:1980px;
     position: absolute;
-    width:50px;
+    width:20px;
     left:550px;
     text-align:center ;
 
 }
 #mymail1{
-    top:1980px;
+    top:1965px;
     position:absolute;
-    width:100px;
-    left:650px;
+    width:10px;
+    left:580px;
     text-align: center;
 }
-#linkedin{
-    top:2000px;
+#address{
+    top:2010px;
     overflow:hidden;
     position: absolute;
-    width:100px;
-    left:525px;
+    width:20px;
+    left:550px;
     text-align: center;
 }
-#mylinkedin{
-    top:2000px;
-    overflow:hidden;
-    position: absolute;
-    width:100px;
-    left:650px;
-    text-align: center;
+#addressimage{
+  top:2010px;
+  overflow:hidden;
+  position:absolute;
+  width:120px;
+  left:600px;
+  text-align: center;
 }
 #network{
     top:2098px;
     overflow:hidden;
     position:absolute;
-    left:640px;
+    left:620px;
     text-align:center;
     width:70px;
 
