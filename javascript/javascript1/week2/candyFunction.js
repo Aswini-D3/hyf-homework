@@ -31,10 +31,6 @@ function addCandy(candyType, weight)
 }
 function canBuyMoreCandy()
 {
-    addCandy('sweet', 20); 
-    addCandy('chocolate' , 12) ;
-    addCandy ('toffee' , 10) ;
-    addCandy('chewing gum', 6);
 
     let totalPrice=0;
     n=0;
@@ -57,6 +53,14 @@ function canBuyMoreCandy()
         
     }
 }
+
+    addCandy('sweet', 20); 
+    addCandy('chocolate' , 12) ;
+    addCandy ('toffee' , 10) ;
+    addCandy('chewing gum', 6); 
+
+
+    
 console.log (boughtCandyPrices);
 const result=canBuyMoreCandy();
 console.log(result);
