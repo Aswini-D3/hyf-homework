@@ -19,6 +19,6 @@ const calculateTime = [
     }
   ]
   for (let {title, days, hours, minutes} of calculateTime) {
-    let fraction = ((days*24 + hours)*60 + minutes) / (365*24*60);
-    console.log(title, (fraction * 100).toFixed(2)+"%");
+    let fraction = ((days*24 + hours)*60 + minutes) / (365*24*60*80);
+    console.log(title  + " took" + (fraction * 100).toFixed(2) + "% of my life");
 }
