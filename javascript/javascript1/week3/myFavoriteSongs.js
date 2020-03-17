@@ -18,45 +18,44 @@ const songDatabase = [{
     title: 'When is enough too little?',
     artist: 'The spies girls',
   },
-];
-const myPlaylist = [];
+]
 
-function myList(index)
-    {
-        const newSong=songDatabase[index];
-        myPlaylist.push(newSong);
-    }
-console.log("My List:");
-
-function addSongToDatabase(song) 
-{
-    songDatabase.push(song);
+function addSongToDatabase(song) {
+  songDatabase.push(song);
+  return songDatabase;
 }
 
-  function getSongByTitle(title)
-   {
-    index = songDatabase.findIndex(x => x.title === title);
-    const newSearchedSong = songDatabase[index];
-    return newSearchedSong;
-  }
-  
-  const searchedSong = getSongByTitle("3 nails in wood");
-  console.log(searchedSong);
-  
-  const searchedSong2 = getSongByTitle("My baby");
-  console.log(searchedSong2);
+console.log(addSongToDatabase({
+  songId: 5,
+  title: "I love it when you call me señorita",
+  artist: "Camila Cabello"
+}));
+console.log(addSongToDatabase({
+  songId: 6,
+  title: "Girls like you",
+  artist: "Adam Levine"
+}));
 
-  
-  
-  
-  function addSongToMyPlaylist(title)
-   {
-    index = songDatabase.findIndex(x => x.title === title);
-    const newSongToAdd = songDatabase[index];
-  
-    myPlaylist.push(newSongToAdd);
-    return myPlaylist;
-  
+function getSongByTitle(title) {
+
+  for (let i = 0; i < songDatabase.length; i++) {
+      if (songDatabase[i].title.includes(title)) {
+          return (songDatabase[i]);
+      }
   }
-  addSongToMyPlaylist('Blacker than black');
-  console.log(myPlaylist);
+}
+
+console.log(getSongByTitle('When is enough too'));
+console.log(getSongByTitle("Girls like you"));
+
+/* Create our own playlist */
+
+let myPlaylist = [];
+
+function addSongToMyPlaylist(title) {
+  myPlaylist.push(getSongByTitle(title));
+
+}
+addSongToMyPlaylist('Blacker than black');
+addSongToMyPlaylist('Girls like you');
+console.log(myPlaylist); 
