@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My favourite Dishes</title>
+</head>
+<body>
+	<!-- <ul>
+		<li>Falafel</li>
+		<li>Pizza</li>
+		<li>Risotto</li>
+	</ul> -->
+<script type="text/javascript">
+	const myFavouriteDishes = ['Falafel', 'Pizza', 'Risotto'];
+	//
+	// Write logic here,
+	// such that myFavouriteDishes
+    // is displayed as a html ul li structure within the body
+
+    var dishes = ['Falafel','Pizza', 'Risotto'];
+		var ul = document.createElement('ul');
+		document.getElementById('my favorite Dshes').appendChild(ul);
+ 
+		dishes.forEach(function(name){
+			var li = document.createElement('li');
+			ul.appendChild(li);
+			li.innerHTML += name;
+
+</script>
+</body>
+</html>
