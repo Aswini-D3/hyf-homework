@@ -5,4 +5,4 @@ function fibonacci(n){
     }
    return result[n]
   }
-  console.log(fibonacci(6));
+  console.log(fibonacci(4));
