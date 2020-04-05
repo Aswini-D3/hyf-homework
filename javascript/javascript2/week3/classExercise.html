@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="button1">I am button 1</button>
+<button id="button2">I am button 2</button>
+
+<script type="text/javascript">
+
+    
+
+    const clickNumber = function(event)
+    {
+        let count=0;
+        if(event.target.id === "button1")
+        {
+			count++;
+        }
+        else if(event.target.id==="button2")
+        {
+			count--;
+        }
+    }
+
+	document.getElementById("button1").addEventListener('click', clickNumber)
+	document.getElementById("button2").addEventListener('click', clickNumber)
+    </script>
+</body>
+</html>
