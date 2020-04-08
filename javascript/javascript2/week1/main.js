@@ -1,9 +1,9 @@
-onsole.log('Script loaded');
+console.log('Script loaded');
 
 
 function getAvailableProducts()
 {
-    const productNames=['Flat screen', 'Mobile phone', 'Wallet'];
+    const productNames=['Bag', 'Shoe', 'Watch'];
     renderProducts(productNames);
     
 }
