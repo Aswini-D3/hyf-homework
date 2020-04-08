@@ -1,7 +1,7 @@
-const spiritAnimal=["The crying butterfly", "The fullmoon wolf", "The powerful Tiger", "The angry bird"];
-const inputName=document.getElementById("name");
-const input=document.getElementById("input");
-const randomName=function()
+const spiritAnimal=["The crying butterfly", "The fullmoon wolf", "The powerful Tiger", "The angry bird"];//given some random names
+const inputName=document.getElementById("name");//inputName what we are typing
+const input=document.getElementById("input");//to the output using div id
+const randomName=function()//function calling
 {
 
     if(inputName==="")
@@ -10,11 +10,11 @@ const randomName=function()
     }
     else
     {
-        const randomNumber = Math.floor(Math.random()*spiritAnimal.length);
-        const randomSpiritAnimalName = spiritAnimal[randomNumber];
+        const randomNumber = Math.floor(Math.random()*spiritAnimal.length);//logic for random selection
+        const randomSpiritAnimalName = spiritAnimal[randomNumber];//logic here for random selection
         input.innerHTML=`${inputName}` + `${randomSpiritAnimalName}`;
     }
 }
-document.getElementById("click").addEventListener('click', randomName);
+document.getElementById("click").addEventListener('click', randomName);//added eventListener
 
 
