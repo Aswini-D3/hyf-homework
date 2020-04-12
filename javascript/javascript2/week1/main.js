@@ -1,28 +1,16 @@
-console.log('Script loaded');
-
-
-function getAvailableProducts()
+console.log('Script loaded');//something is missing I thinks so here,but I written the code according to the requirements.
+const testProductNames=getAvailableProducts();
+console.log(testProductNames[0]);
+const testProductNames=["Laptop","TV","Ipad"];
+function renderProducts(products)
 {
-    const productNames=['Bag', 'Shoe', 'Watch'];
-    renderProducts(productNames);
-    
-}
-
-
-
-function renderProducts(products) 
-{
-
-    const sectionTag = document.getElementsByClassName('products');
-
-    const ulTag = document.querySelector('ul');
-
-
-    for ( let i = 0; i < products.length ; i++) 
+    const ulTag=document.querySelector('section.products>ul');
+    for(let i=0;i<products.length;i++)
     {
-        const liTag = document.createElement('li');
-        liTag.innerHTML = products[i];
+        const currentProduct=products[i];
+        const liTag=document.createElement('li');
+        ulTag.appendChild(liTag);
     }
-    ulTag.appendChild(liTag);
-} 
-console.log(getAvailableProducts());
+}
+renderProducts(testProductNames);
+
