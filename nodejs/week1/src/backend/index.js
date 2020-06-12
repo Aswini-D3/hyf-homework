@@ -1,14 +1,27 @@
-var express = require('express'); // call express
-var app = express(); // define our app using express
+// Bring in our dependencies...
+const express=require('express');
+const app=express();
+const port = 3000;
 
-//creating meal route
-var reservations = require('./routes/reservations');
-app.use('/reservations', reservations);
+//Creating routes...
+const largemealsRouter=require('./routes/large-meals.js');
+app.get('/large-meal',largemealsRouter);
 
-// Listen to port 8084
-app.listen(8084, function () {
-    console.log('Dev app listening on port 8084!');
-  });
+const mealsRouter=require('./routes/meals.js');
+app.get('/meals',mealsRouter);
+
+const reservationRouter=require('./routes/reservation.js');
+app.get('/reservation',reservationRouter);
+
+const mealRouter=require('./routes/meal.js');
+app.get('/meal',mealRouter);
+
+const cheapmealRouter=require('./routes/cheap-meals.js');
+app.get('/cheap-meal',cheapmealRouter);
+
+
+//// Turn on that server!
+app.listen(port, () => console.log(`App is listening at http://localhost:${port}`));
 
 
 
