@@ -1,3 +1,25 @@
+const circle = {
+    circleArea : (r) =>(3.14 * r *r),
+    circleDiameter : (r) => (2 * r),
+    circleCircumference : (r) => (2 * 3.14 * r)
+}
+
+const callCircle = (r) => {
+    console.log(`The value of circle radius is ${r} and the circle area is` +circle.circleArea(r));
+    console.log(`The value of circle radius is ${r} and the circle diameter is` +circle.circleDiameter(r));
+    console.log(`The value of circle radius is ${r} and the circle circumference is` +circle.circleCircumference(r));
+}
+callCircle(5);
+
+
+
+
+
+
+
+
+
+/*Another way of code....
 class Circle 
 {
     constructor(r) {
@@ -19,7 +41,7 @@ let circle = new Circle(radius);
 console.log(`Area for radius ${radius} is ${circle.getArea()}`);
 console.log(`Circumference for radius ${radius} is ${circle.getCircumference()}`);
 console.log(`Diameter for radius ${radius} is ${circle.getDiameter()}`);
-/*Circle class is used to hold the value of the radius. It has one constructor. It takes the radius as an argument and assigns it to the local variable radius.
+Circle class is used to hold the value of the radius. It has one constructor. It takes the radius as an argument and assigns it to the local variable radius.
 This class also has two methods getArea() and getPerimeter() to get the area and perimeter of a circle for the current radius. toFixed(2) is used to change the calculated value to two decimal places.
 In this example, we are creating one variable radius(this is a different variable) with value 10.
 We are creating one Circle object by passing the value of radius to its constructor.
