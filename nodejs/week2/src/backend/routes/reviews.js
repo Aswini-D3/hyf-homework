@@ -11,7 +11,7 @@ app.get('/reviews', (req,res)=>{
 
 //JSON response for reviews with id
 app.get('/reviews/:id', (req,res)=>{
-    const id = Number(req.params.id);
+    const id = parseInt(req.params.id);
     console.log(req.params.id);
     const reviewId = reviews.filter(review=>review.id === id);
     res.send(reviewId); 

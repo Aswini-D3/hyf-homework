@@ -10,7 +10,7 @@ app.get('/reservations', (req,res)=>{
 
 //JSON response for reservations with id
 app.get('/reservations/:id', (req,res)=>{
-    const id = Number(req.params.id);
+    const id = parseInt(req.params.id);
     console.log(req.params.id);
     const reservationId = reservations.filter(reservation=>reservation.id === id);
     res.send(reservationId); 

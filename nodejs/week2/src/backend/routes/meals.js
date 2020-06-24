@@ -4,11 +4,6 @@ const app = express();
 const meals = require("../data/meals");
 const reviews = require("../data/reviews");
 
-//JSON response for all meals
-app.get('/meals', (req,res)=>{
-    res.send(meals)
-});
-
 //JSON response for with corresponding ID
 app.get('/meals/:id', (req,res)=>{
     const id = Number(req.params.id);
@@ -26,7 +21,7 @@ app.get('/meals/:id', (req,res)=>{
 //JSON response for meals that has a price smaller than maxPrice
 app.get('/meals', (req,res)=>{
     if(req.query.maxPrice){
-        const maxPrice = Number(req.params.maxPrice);
+        const maxPrice = parseInt(req.params.maxPrice);
         const mealSmallerThanMaxPrice = meals.filter((meal)=>meal.price <= maxPrice);
         res.send(mealSmallerThanMaxPrice);
     }
@@ -49,7 +44,10 @@ app.get('/meals', (req,res)=>{
         res.send(limitNumber);
     }
     else{
-        res.status(401).send('error');
+        //JSON response for all meals
+        res.send(meals);
+
+        
     }
 
 });
