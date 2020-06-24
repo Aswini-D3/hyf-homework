@@ -13,13 +13,8 @@ const reviews = require("../data/reviews.json");
 
 //The module.exports or exports is a special object which is included in every JS file in the Node.js application by default. module is a variable that represents current module and exports is an object that will be exposed as a module. So, whatever you assign to module.exports or exports, will be exposed as a module.
 module.exports=(req, res)=> {
-  let randomMealNumber = Math.floor(Math.random() * meals.length);
-  const randomMeal = meals[randomMealNumber];
-  const x = randomMeal.id;//Random selction of meal based on ID
-
-  const randomMealReview = reviews.filter(review => {
-    if (randomMeal.id == review.mealId) {
-      res.send(review) ;//Based on reviews to get randomMeal using filter method.
-    }
-  });
+  const randomNum = math.floor(math.random() * meals.length);
+  const randomMeal = meals[randomNum];
+  randomMeal.review = reviews.filter((review)=>review.mealId === randomMeal.id);
+  res.send(randomMeal);
 };

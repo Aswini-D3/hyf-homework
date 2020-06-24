@@ -8,18 +8,12 @@ Local Modules. If the module name has a ./, / or ../, it will look for the direc
 
 
 const reservations = require("../data/reservations.json");
-const reviews = require("../data/reviews.json");
+
 
 
 //The module.exports or exports is a special object which is included in every JS file in the Node.js application by default. module is a variable that represents current module and exports is an object that will be exposed as a module. So, whatever you assign to module.exports or exports, will be exposed as a module.
 module.exports=(req, res)=> {
-  let randomReservationNumber = Math.floor(Math.random() * reservations.length);
-  const randomReservation = meals[randomReservationNumber];
-  const x = randomReservation.id;//Random selction of reservation based on ID
-
-  const randomReservationReview = reviews.filter(review => {
-    if (randomReservation.id == review.reservationId) {
-      res.send(review) ;//Based on reviews to get randomMeal using filter method.
-    }
-  });
+  const randomNum = math.floor(math.random() * reservations.length);
+  const randomReservation = reservations[randomNum];
+  res.send(randomReservation);
 };
