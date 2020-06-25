@@ -33,7 +33,7 @@ app.get('/meals', (req,res)=>{
     }
 //JSON response  to Get meals that has been created after the date
     else if(req.query.createdAfter){
-        const createdDate = Date(req.params.createdAfter);
+        const createdDate = new Date(req.params.createdAfter);
         const mealsCreatedAfter = meals.filter((meal)=>new Date(meal.createdAt) > createdDate);
         res.send(mealsCreatedAfter);
     }
