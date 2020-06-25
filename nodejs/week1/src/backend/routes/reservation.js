@@ -13,7 +13,7 @@ const reservations = require("../data/reservations.json");
 
 //The module.exports or exports is a special object which is included in every JS file in the Node.js application by default. module is a variable that represents current module and exports is an object that will be exposed as a module. So, whatever you assign to module.exports or exports, will be exposed as a module.
 module.exports=(req, res)=> {
-  const randomNum = math.floor(math.random() * reservations.length);
+  const randomNum = Math.floor(Math.random() * reservations.length);
   const randomReservation = reservations[randomNum];
   res.send(randomReservation);
 };
