@@ -1,19 +1,18 @@
 //Bringing Dependencies
-const express = require('express');
-const app = express();
+
 const meals = require("../data/meals");
 const reviews = require("../data/reviews");
 
 //JSON response for with corresponding ID
 app.get('/meals/:id', (req,res)=>{
     const id = Number(req.params.id);
-    const mealId = meals.filter(meal=>meal.id === id);
-    res.send(mealId);
+    const meal = meals.filter(meal=>meal.id === id);
+    res.send(meal);
     if(mealId.length === 0){
         res.status(401).send('Not found meal');
 }
     else{
-        res.send(mealId);
+        res.send(meal);
     }
     
 });
@@ -21,7 +20,7 @@ app.get('/meals/:id', (req,res)=>{
 //JSON response for meals that has a price smaller than maxPrice
 app.get('/meals', (req,res)=>{
     if(req.query.maxPrice){
-        const maxPrice = parseInt(req.params.maxPrice);
+        const maxPrice = Number(req.params.maxPrice);
         const mealSmallerThanMaxPrice = meals.filter((meal)=>meal.price <= maxPrice);
         res.send(mealSmallerThanMaxPrice);
     }
