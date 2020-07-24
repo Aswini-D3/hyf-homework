@@ -8,7 +8,7 @@ app.get('/meals/:id', (req,res)=>{
     const id = Number(req.params.id);
     const meal = meals.filter(meal=>meal.id === id);
     if(mealId.length === 0){
-        res.status(401).send('Not found meal');
+        res.status(404).send('Not found meal');
 }
     else{
         res.send(meal);
