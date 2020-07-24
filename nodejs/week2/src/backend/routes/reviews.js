@@ -12,6 +12,10 @@ app.get('/reviews/:id', (req,res)=>{
     const id = Number(req.params.id);
     console.log(req.params.id);
     const reviewId = reviews.filter(review=>review.id === id);
+    if(reviewId.length===0)
+    {
+        res.status(401).send('Not found review');
+    }
     res.send(reviewId); 
 
 });
