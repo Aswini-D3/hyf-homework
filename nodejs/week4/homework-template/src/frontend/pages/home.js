@@ -95,9 +95,9 @@ window.handleHomeRequest = () => {
           <div class="bottom-actions">
             <a class="btn btn-primary" href="meals" data-navigo>View All Meals</a>
           </div>
-        </section>
+        </section>-->
       </div>
-    </div>-->
+    </div>
 
     <!-- page footer -->
     <footer>
