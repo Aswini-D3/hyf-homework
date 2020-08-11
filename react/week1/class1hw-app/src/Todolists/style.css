@@ -1,0 +1,12 @@
+.todos-card{
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    widows: 1200px;
+    height: 800px;
+    font-weight: bold;
+    text-decoration: underline;
+
+    
+}
