@@ -1,0 +1,147 @@
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}*/
+*{
+  box-sizing:border-box;
+}
+body{
+  margin : 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: black; */
+  color: palegreen;
+  
+}
+.button {
+  background-color: lightgoldenrodyellow; /* Green */
+  border: none;
+  color: goldenrod;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(50, 169, 220);
+}
+.text-center{
+  text-align:center;
+  text-decoration: underline;
+  color:palevioletred;
+  font-size: 25px;
+  font-style:inherit ;
+  margin-top: 0px;
+  padding: 10px;
+  
+}
+.container{
+  width:100%;
+  margin: 0% auto;
+  color: red;
+  background-color: orange;
+  background: url("components/Images/Image1.jpg");
+  height:550px;
+
+}
+.ListItems {
+  
+  color:black;
+
+}
+.ListItems p{
+  margin: 0;
+  text-align: center;
+  padding: 20px 0px;
+  
+}
+.ListItems span{
+  display:inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  border: 0.3px solid black;
+}
+.ListItems span.title{
+  background: palevioletred;
+  color:white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.list-item{
+  background: lightblue; 
+}
+.ListItems span.description,
+form input[type=text]{
+  width:20%;
+  
+}
+.ListItems span.when,
+form input[type=text]{
+  width:30%
+}
+.ListItems span.action,
+form input[type=submit]{
+  width:10%
+}
+.ListItems span.icon, .delete-item{
+  background: white;
+  color: red;
+  cursor: pointer;
+}
+
+.delete-item:hover{
+background-color: red;
+color: white
+}
+.ListItems .completed{
+  text-decoration: line-through;
+}
+form input{
+  padding: 5px;
+  background: white;
+  border:thick;
+  border: 3px solid palevioletred;
+  margin-top: 10px;
+}
+form input[type=submit]{
+  background: palevioletred;
+  border: 0.3px solid orange;
+  color: #fff;
+  cursor: pointer;
+}
+.timer-text{
+  color:goldenrod;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  padding:5px;
+}
+.timer-text img{
+  width:2%;
+}
+.Add-Todo{
+  color: palevioletred;
+  text-decoration: underline;
+  margin-top:20px;
+}
+.Footer{
+  color:lightblue;
+  margin-top: 60px;
+  left:300px;
+  background-color: palevioletred;
+  font-weight: bold;
+  font-size: 18px;
+}
+
